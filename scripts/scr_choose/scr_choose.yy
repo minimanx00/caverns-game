@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_choose",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_choose",
+  "parent":{
+    "name":"personal",
+    "path":"folders/Scripts/Tools/personal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

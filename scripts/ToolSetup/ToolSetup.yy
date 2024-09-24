@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ToolSetup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ToolSetup",
+  "parent":{
+    "name":"personal",
+    "path":"folders/Scripts/Tools/personal.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

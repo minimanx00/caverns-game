@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"console_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"console_draw",
+  "parent":{
+    "name":"console",
+    "path":"folders/Scripts/Tools/personal/console.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

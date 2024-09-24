@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_camera_teleport",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_camera_teleport",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/Tools/personal/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

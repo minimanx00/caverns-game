@@ -1,0 +1,1 @@
+if(DEBUG){console_on = !console_on;}

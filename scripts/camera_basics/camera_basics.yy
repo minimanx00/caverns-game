@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"camera_basics",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"camera_basics",
+  "parent":{
+    "name":"camera",
+    "path":"folders/Scripts/Tools/personal/camera.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
