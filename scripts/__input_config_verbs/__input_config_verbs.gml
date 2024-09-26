@@ -19,6 +19,8 @@ function __input_config_verbs()
             down:  [input_binding_key(vk_down),  input_binding_key("S")],
             left:  [input_binding_key(vk_left),  input_binding_key("A")],
             right: [input_binding_key(vk_right), input_binding_key("D")],
+			
+			mine: input_binding_mouse_button(mb_left),
             
             accept:  input_binding_key(vk_space),
             cancel:  input_binding_key(vk_backspace),
@@ -47,7 +49,7 @@ function __input_config_verbs()
             aim_down:  input_binding_gamepad_axis(gp_axisrv, false),
             aim_left:  input_binding_gamepad_axis(gp_axisrh, true),
             aim_right: input_binding_gamepad_axis(gp_axisrh, false),
-            shoot:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
+            mine:     [input_binding_gamepad_button(gp_shoulderlb), input_binding_gamepad_button(gp_shoulderrb)],
             
             pause: input_binding_gamepad_button(gp_start),
         },

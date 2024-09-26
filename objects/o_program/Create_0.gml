@@ -12,3 +12,6 @@ debugconsole_time = room_speed;
 // camera
 
 camera_basics_create();
+
+
+room_goto_next()

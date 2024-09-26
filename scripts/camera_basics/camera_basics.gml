@@ -5,16 +5,22 @@ function camera_basics_create(){
 	camera_y = 0;
 	
 	global.game_view_scale = false;
-	global.game_gui_scale = 2;
-	global.game_width = 320;
-	global.game_height = 240;
+	global.game_gui_scale = 1;
+	global.game_width = 1280;
+	global.game_height = 720;
 	camera_basics_setup(global.game_width,global.game_height,global.game_view_scale,global.game_gui_scale)
 	
 	
 }
 
 function camera_basics_step(){
-
+	var cw =camera_get_view_width(view_camera[0]);
+	var ch =camera_get_view_height(view_camera[0]);
+	camera_x = lerp(camera_x,camera_xto,0.25);
+	camera_y = lerp(camera_y,camera_yto,0.25);
+	var clx = clamp(camera_x-cw*0.5,0,room_width-cw);
+	//var cly = clamp(camera_y-ch*0.5,ch*0.5,room_height-ch*0.5);
+	camera_set_view_pos(view_camera[0],clx,0);
 }
 
 function camera_basics_afterframe(){
