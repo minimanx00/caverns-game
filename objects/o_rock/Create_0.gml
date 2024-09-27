@@ -1,0 +1,1 @@
+drops = ["copper_ore","cobalt_ore"]

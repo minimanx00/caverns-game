@@ -2,6 +2,7 @@
 // You can write your code in this editor
 scr_camera_moveto(x,y);
 
+midy = bbox_top + (bbox_bottom - bbox_top)*0.5;
 
 var hsp = input_check("right")-input_check("left");
 
@@ -23,6 +24,12 @@ if(place_meeting(x+hspd,y,o_rock)){
 
 x += hspd;
 
+if(place_meeting(x+hspd,y,o_furnace)){
+	if(input_check_pressed("accept")){
+		o_furnace.on = !o_furnace.on;
+	}
+}
+
 
 if(hspd!=0){
 	image_xscale = sign(hspd);
@@ -38,6 +45,9 @@ if(mine_wait<=0 and input_check("mine")){
 	if(instance_exists(pm) and pm!=noone){
 		with(pm){
 			shake = 10;	
+			var drop = scr_choose(drops);
+			var count = 1;
+			instance_create_layer(x+image_xscale*54,y-270,"Front",o_item_fall,{item:drop,amount:count,direction:point_direction(x,40,o_player.x,0)})
 		}
 	}
 }

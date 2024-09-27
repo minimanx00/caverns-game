@@ -14,3 +14,5 @@ mine_angle = mine_angle_max;
 mine_anim = 0;
 
 items = {}
+
+midy = y;
