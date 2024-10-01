@@ -16,3 +16,5 @@ mine_anim = 0;
 items = {}
 
 midy = y;
+
+inventory = new Inventory();

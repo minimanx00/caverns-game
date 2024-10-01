@@ -7,6 +7,7 @@ if(time_spend>20){
 	friction = lerp(friction,0,0.1);	
 	move_towards_point(o_player.x,o_player.midy,lerp(0,point_distance(x,y,o_player.x,o_player.midy),0.1))
 	if(place_meeting(x,y,o_player)){
+		o_player.inventory.additem(new Resource(item,amount))
 		scr_item_add(item,amount)
 		instance_destroy();	
 	}

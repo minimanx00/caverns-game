@@ -39,7 +39,7 @@ if(DEBUG){
 	global.googleSheet.getManager();
 	global.googleSheet.downloadFile(GOOGLESHEETDOWNLOADURL,"items.csv",
 	function(result){
-
+		show_debug_message("ITEMS MADE FROM EXCEL")
 		ds_grid_destroy(global.items_csv);
 		getitems()
 		global.googleSheet = undefined;
