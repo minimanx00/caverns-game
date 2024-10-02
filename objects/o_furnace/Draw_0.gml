@@ -8,3 +8,5 @@ draw_sprite_ext(s_furnace_on,0,x,y,xs,ys,image_angle,image_blend,image_alpha);
 }else{
 draw_sprite_ext(s_furnace_off,0,x,y,xs,ys,image_angle,image_blend,image_alpha);	
 }
+
+inventory.draw(x,y-128*3);
