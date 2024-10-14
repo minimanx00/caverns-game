@@ -415,6 +415,8 @@
     {"name":"s_item_cobalt_ingot","order":3,"path":"sprites/s_item_cobalt_ingot/s_item_cobalt_ingot.yy",},
     {"name":"s_item_cobalt_ore","order":2,"path":"sprites/s_item_cobalt_ore/s_item_cobalt_ore.yy",},
     {"name":"s_item_copper_ingot","order":1,"path":"sprites/s_item_copper_ingot/s_item_copper_ingot.yy",},
+    {"name":"s_item_pickaxe_cobalt","order":5,"path":"sprites/s_item_pickaxe_cobalt/s_item_pickaxe_cobalt.yy",},
+    {"name":"s_item_pickaxe_rusty","order":4,"path":"sprites/s_item_pickaxe_rusty/s_item_pickaxe_rusty.yy",},
     {"name":"s_pickaxe","order":3,"path":"sprites/s_pickaxe/s_pickaxe.yy",},
     {"name":"s_pickpile","order":6,"path":"sprites/s_pickpile/s_pickpile.yy",},
     {"name":"s_player","order":2,"path":"sprites/s_player/s_player.yy",},

@@ -490,6 +490,8 @@
     {"id":{"name":"s_item_cobalt_ore","path":"sprites/s_item_cobalt_ore/s_item_cobalt_ore.yy",},},
     {"id":{"name":"s_item_copper_ingot","path":"sprites/s_item_copper_ingot/s_item_copper_ingot.yy",},},
     {"id":{"name":"s_item_copper_ore","path":"sprites/s_item_copper_ore/s_item_copper_ore.yy",},},
+    {"id":{"name":"s_item_pickaxe_cobalt","path":"sprites/s_item_pickaxe_cobalt/s_item_pickaxe_cobalt.yy",},},
+    {"id":{"name":"s_item_pickaxe_rusty","path":"sprites/s_item_pickaxe_rusty/s_item_pickaxe_rusty.yy",},},
     {"id":{"name":"s_pickaxe","path":"sprites/s_pickaxe/s_pickaxe.yy",},},
     {"id":{"name":"s_pickpile","path":"sprites/s_pickpile/s_pickpile.yy",},},
     {"id":{"name":"s_player","path":"sprites/s_player/s_player.yy",},},

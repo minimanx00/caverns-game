@@ -20,6 +20,7 @@ items = {}
 midy = y;
 
 inventory = new GameInventory();
+//inventory.additem("stone_pickaxe");
 
 showinventory = false;
 inventory2 = -1;

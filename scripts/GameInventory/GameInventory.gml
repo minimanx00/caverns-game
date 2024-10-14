@@ -82,3 +82,28 @@ global.recipes = {};
 for(var i = 0; i<l; i++){
 	global.recipes[$ n[i]] = new Recipe(n[i],g[$ n[i]]);
 }
+
+
+//
+function console_item(type,array,index=0){
+	switch(type){
+		case CONSOLE.CORRECTION:
+			switch(index){
+				case 0:
+				return(struct_get_names(global.items))
+				break;
+			}
+		break;
+		case CONSOLE.EXECUTE:
+			var str = array[0];
+			if(struct_exists(global.items,str)){
+			var am = 1;
+			if(array_length(array)>=2 and array[1]!=""){var am = real(array[1])}
+			with(o_player){inventory.additem(new Resource(str,am))}
+			return("got "+str);
+			}
+		break;
+	}
+}
+
+console_cmd_add("item",console_item)
