@@ -26,16 +26,6 @@ function Inventory(_maxcount = 10) constructor{
 	}
 	
 	static draw = function(xx,yy) {
-		var l = array_length(inventory);
-		var z = 0.5;
-		var sw = sprite_get_width(s_tile)*z;
-		for(var i = 0; i<maxcount; i++){
-			var xi = i mod rowcount;
-			var yi = i div rowcount;
-			draw_sprite_ext(s_tile,0,xx+xi*sw,yy+yi*sw,z,z,0,c_white,1);
-			if(i<l){
-				inventory[i].draw(xx+xi*sw,yy+yi*sw,z);
-			}
-		}
+			
 	}
 }

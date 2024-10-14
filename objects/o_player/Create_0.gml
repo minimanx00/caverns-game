@@ -17,4 +17,4 @@ items = {}
 
 midy = y;
 
-inventory = new Inventory();
+inventory = new GameInventory();

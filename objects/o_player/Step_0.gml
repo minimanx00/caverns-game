@@ -38,7 +38,7 @@ if(hspd!=0){
 
 mine_wait = approach(mine_wait,0,1);
 mine_angle = lerp(mine_angle,mine_angle_max,0.2);
-if(mine_wait<=0 and input_check("mine")){
+if(mine_wait<=0 and input_check("mine") and inventory.selected_slot==-1){
 	mine_angle = -mine_angle_max;
 	mine_wait = 20;
 	var pm = instance_place(x+image_xscale*128,y,o_rock)
@@ -51,3 +51,5 @@ if(mine_wait<=0 and input_check("mine")){
 		}
 	}
 }
+
+inventory.selected_slot = inventory.checkslot(mouse_x,mouse_y,x,y-128*3);

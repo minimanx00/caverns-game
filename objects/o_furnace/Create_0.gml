@@ -2,4 +2,4 @@
 // You can write your code in this editor
 on_lerp  = on;
 
-inventory = new Inventory();
+inventory = new GameInventory();
