@@ -2,6 +2,8 @@
 // You can write your code in this editor
 
 
+
+
 spd = 6;
 acc = 0.5;
 
@@ -18,3 +20,8 @@ items = {}
 midy = y;
 
 inventory = new GameInventory();
+
+showinventory = false;
+inventory2 = -1;
+invx = 0; invy = 0;
+inv1x = 0; inv2x = 0;

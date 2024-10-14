@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Tag",
+  "%Name":"file_load_json",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Tag",
+  "name":"file_load_json",
   "parent":{
-    "name":"Resourceables",
-    "path":"folders/Scripts/Resourceables.yy",
+    "name":"Tools",
+    "path":"folders/Scripts/Tools.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

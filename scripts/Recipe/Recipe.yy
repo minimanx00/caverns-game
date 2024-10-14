@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Recipe",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Resourceables",
+    "path":"folders/Scripts/Resourceables.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

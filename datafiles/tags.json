@@ -1,0 +1,5 @@
+{
+    "ores":["copper_ore","cobalt_ore"],
+    "ingots":["copper_ingot","cobalt_ingot"],
+    "furnace":"ores+ingots"
+}
