@@ -1,27 +1,32 @@
 {
   "$GMSprite":"",
-  "%Name":"s_item_cobalt_ore",
+  "%Name":"s_item_pickaxe_copper",
   "bboxMode":0,
-  "bbox_bottom":77,
+  "bbox_bottom":107,
   "bbox_left":0,
-  "bbox_right":109,
+  "bbox_right":94,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
+  "ConfigValues":{
+    "Debug":{
+      "textureGroupId":"{ \"name\":\"Default\", \"path\":\"texturegroups/Default\" }",
+    },
+  },
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"d9351b94-6edc-4b5a-a51b-6b42e00d4bbe","name":"d9351b94-6edc-4b5a-a51b-6b42e00d4bbe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"908175b3-c632-4fe4-9261-eb7701648daf","name":"908175b3-c632-4fe4-9261-eb7701648daf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":78,
+  "height":108,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"49d874bc-948e-4db1-99cb-8b189ed33981","blendMode":0,"displayName":"default","isLocked":false,"name":"49d874bc-948e-4db1-99cb-8b189ed33981","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"75aa8bf0-b5ef-48f6-859d-8e798d8b18ca","blendMode":0,"displayName":"default","isLocked":false,"name":"75aa8bf0-b5ef-48f6-859d-8e798d8b18ca","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"s_item_cobalt_ore",
+  "name":"s_item_pickaxe_copper",
   "nineSlice":null,
   "origin":4,
   "parent":{
@@ -33,7 +38,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"s_item_cobalt_ore",
+    "%Name":"s_item_pickaxe_copper",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +62,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"s_item_cobalt_ore",
+    "name":"s_item_pickaxe_copper",
     "playback":1,
     "playbackSpeed":12.0,
     "playbackSpeedType":0,
@@ -69,14 +74,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9351b94-6edc-4b5a-a51b-6b42e00d4bbe","path":"sprites/s_item_cobalt_ore/s_item_cobalt_ore.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0c3194b9-1c0b-41f2-89cb-8dd73b6a04af","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"908175b3-c632-4fe4-9261-eb7701648daf","path":"sprites/s_item_pickaxe_copper/s_item_pickaxe_copper.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a8cfd2ac-458f-4f15-8377-bff49150b223","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":55,
-    "yorigin":39,
+    "xorigin":47,
+    "yorigin":54,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +91,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":110,
+  "width":95,
 }
