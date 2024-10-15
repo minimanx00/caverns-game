@@ -18,4 +18,4 @@ for(var i = 0; i<l; i++){
 		array_push(s,global.recipes[$ refinetag.items[i] ]);
 	}
 }
-converter = new Converter(s)
+converter = new GameConverter(s)

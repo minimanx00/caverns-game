@@ -1,4 +1,7 @@
 {
     "cobalt_ingot":{"cobalt_ore":1},
-    "copper_ingot":{"copper_ore":1}
+    "copper_ingot":{"copper_ore":1},
+
+    "cobalt_pickaxe":{"cobalt_ingot":5},
+    "copper_pickaxe":{"copper_ingot":5}
 }

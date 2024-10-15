@@ -213,6 +213,7 @@
     {"id":{"name":"file_load_string","path":"scripts/file_load_string/file_load_string.yy",},},
     {"id":{"name":"file_save_json","path":"scripts/file_save_json/file_save_json.yy",},},
     {"id":{"name":"file_save_string","path":"scripts/file_save_string/file_save_string.yy",},},
+    {"id":{"name":"GameConverter","path":"scripts/GameConverter/GameConverter.yy",},},
     {"id":{"name":"GameInventory","path":"scripts/GameInventory/GameInventory.yy",},},
     {"id":{"name":"GoogleSheet","path":"scripts/GoogleSheet/GoogleSheet.yy",},},
     {"id":{"name":"input_accessibility_global_cooldown_get","path":"scripts/input_accessibility_global_cooldown_get/input_accessibility_global_cooldown_get.yy",},},

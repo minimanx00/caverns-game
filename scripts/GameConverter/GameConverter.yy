@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Converter",
+  "%Name":"GameConverter",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Converter",
+  "name":"GameConverter",
   "parent":{
-    "name":"Resourceables",
-    "path":"folders/Scripts/Resourceables.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

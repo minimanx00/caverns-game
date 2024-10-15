@@ -11,6 +11,9 @@ midy = bbox_top + (bbox_bottom - bbox_top)*0.5;
 
 var hsp = input_check("right")-input_check("left");
 
+axe_lerp = lerp(axe_lerp,y-48 + bob_wave,0.2);
+bob_lerp = lerp(bob_lerp,hsp!=0,0.1);
+bob_wave = wave(0,-10,0.5,0)*bob_lerp;
 
 if(hsp!=0){
 hspd = approach(hspd,hsp*spd,acc);
@@ -33,13 +36,25 @@ if(input_check_pressed("accept")){
 showinventory = !showinventory
 }
 
+
+
 inventory2 = -1;
+converter2 = -1;
+interact_object = noone;
+
+if(place_meeting(x+hspd,y,o_smith)){
+	interact_object = o_smith.id;
+	if(o_smith.state==SMITHSTATE.ready){
+	converter2 = o_smith.converter;
+	inventory2 = o_smith.inventory;	
+	}else
+	if(o_smith.state==SMITHSTATE.done){
+	inventory2 = o_smith.inventory;	
+	}
+}else
 
 if(place_meeting(x+hspd,y,o_furnace)){
 	inventory2 = o_furnace.inventory;
-	if(input_check_pressed("accept")){
-		//o_furnace.on = !o_furnace.on;
-	}
 }
 
 
@@ -67,6 +82,14 @@ if(mine_wait<=0 and input_check("mine") and !showinventory){
 inventory.selected_slot = inventory.checkslot(mouse_x,mouse_y,inv1x,invy);
 if(is_struct(inventory2)){
 	inventory2.selected_slot = inventory2.checkslot(mouse_x,mouse_y,inv2x,invy);
+}
+if(is_struct(converter2)){
+	converter2.selected_slot = converter2.checkslot(mouse_x,mouse_y,inv2x,invy);
+	if(input_check_pressed("mine")){
+		if(converter2.selected_slot!=-1){
+			converter2.convert(converter2.selected_slot,inventory,interact_object.inventory)
+		}
+	}
 }
 
 if(showinventory){

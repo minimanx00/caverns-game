@@ -1,7 +1,8 @@
-item_id,item_name,item_sprite,item_stacksize,item_type,item_smelt,item_smelttime
-stone_pickaxe,Rusty Pickaxe,s_item_pickaxe_rusty,1,pickaxe,,
-cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,,
-copper_ore,Copper Ore,s_item_copper_ore,999,resource,copper_ingot,10
-copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,
-cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,cobalt_ingot,10
-cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,
+item_id,item_name,item_sprite,item_stacksize,item_type,item_smelt,item_smelttime,item_durability
+stone_pickaxe,Stone Pickaxe,s_item_pickaxe_stone,1,pickaxe,,,10
+cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,,,30
+copper_pickaxe,Copper Pickaxe,s_item_pickaxe_copper,1,pickaxe,,,30
+copper_ore,Copper Ore,s_item_copper_ore,999,resource,copper_ingot,10,
+copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,,
+cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,cobalt_ingot,10,
+cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,,

@@ -12,6 +12,8 @@ function Converter(_recipes=[]) constructor {
 	}
 	
 	static convert = function (_recipe,_inventoryfrom,_inventoryto = _inventoryfrom) {
+		convertcheck(_inventoryfrom)
+		
 		// get recipe
 		if(is_string(_recipe)){
 			var l = array_length(recipes);
@@ -20,11 +22,23 @@ function Converter(_recipes=[]) constructor {
 			}
 		}
 		
+		// check if you can make recipe
+		if(!checks[_recipe]){return(false)}
+		
 		// delete recipe resources
 		var getrecipe = recipes[_recipe];
 		getrecipe.takerecipe(_inventoryfrom)
 		
 		// gain recipe results
 		getrecipe.giveresult(_inventoryto)
+		
+		// on converting function
+		onconvert()
+		
+		return(true)
+	}
+	
+	static onconvert = function () {
+		
 	}
 }
