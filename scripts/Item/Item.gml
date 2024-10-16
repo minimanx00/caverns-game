@@ -29,10 +29,12 @@ function Item(_data = {}) constructor {
 		type =  _data[$ "item_type"];
 	}
 	
-	if(type == "resource" and struct_exists(_data,"item_smelt") and _data[$ "item_smelt"]!=""){
-		smeltable = true;
-		smeltresult	= _data[$ "item_smelt"];
-		smelttime 	= _data[$ "item_smelttime"];
+	if(type == "pickaxe" and struct_exists(_data,"item_durability") and _data[$ "item_durability"]!=""){
+		durability	= _data[$ "item_durability"];
+	}
+	
+	if(type == "pickaxe" and struct_exists(_data,"item_toolsprite") and _data[$ "item_toolsprite"]!=""){
+		toolsprite = asset_get_index(_data[$ "item_toolsprite"]);	
 	}
 	
 }

@@ -22,7 +22,7 @@ function __input_config_verbs()
 			
 			mine: input_binding_mouse_button(mb_left),
             
-            accept:  input_binding_key(vk_space),
+            accept:  [input_binding_key(vk_space), input_binding_key("E")],
             cancel:  input_binding_key(vk_backspace),
             action:  input_binding_key(vk_enter),
             special: input_binding_key(vk_shift),

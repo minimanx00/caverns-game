@@ -35,3 +35,6 @@ converter2 = -1;
 interact_text = "";
 
 interact_object = noone;
+
+
+equipped = new Resource("stone_pickaxe",1)

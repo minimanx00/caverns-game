@@ -19,5 +19,5 @@ state = SMITHSTATE.ready;
 working_time = 0;
 
 converter.onconvert = function () {
-	o_smith.working_time = room_speed*60;
+	o_smith.working_time = room_speed*10;
 }

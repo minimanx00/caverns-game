@@ -41,6 +41,7 @@ showinventory = !showinventory
 inventory2 = -1;
 converter2 = -1;
 interact_object = noone;
+interact_text = "";
 
 if(place_meeting(x+hspd,y,o_smith)){
 	interact_object = o_smith.id;
@@ -51,11 +52,22 @@ if(place_meeting(x+hspd,y,o_smith)){
 	if(o_smith.state==SMITHSTATE.done){
 	inventory2 = o_smith.inventory;	
 	}
+	if(!showinventory){interact_text = "Make Pickaxe"}
 }else
 
 if(place_meeting(x+hspd,y,o_furnace)){
 	inventory2 = o_furnace.inventory;
+	if(!showinventory){interact_text = "Forge Metals"}
+}else
+
+if(place_meeting(x+hspd,y,o_pickpile)){
+	var tag = global.tags[$ "pickaxes"];
+	if(!inventory.containstag(tag) and (equipped ==-1 or !tag.contains(equipped.name))){
+		if(input_check_pressed("accept")){inventory.additem(new Resource("stone_pickaxe",1))}
+		if(!showinventory){interact_text = "Get Pickaxe"}
+	}
 }
+
 
 
 if(hspd!=0){
@@ -65,17 +77,19 @@ if(hspd!=0){
 
 mine_wait = approach(mine_wait,0,1);
 mine_angle = lerp(mine_angle,mine_angle_max,0.2);
-if(mine_wait<=0 and input_check("mine") and !showinventory){
+if(is_struct(equipped) and mine_wait<=0 and input_check("mine") and !showinventory){
 	mine_angle = -mine_angle_max;
 	mine_wait = 20;
 	var pm = instance_place(x+image_xscale*128,y,o_rock)
 	if(instance_exists(pm) and pm!=noone){
+		equipped.durability --;
 		with(pm){
 			shake = 10;	
 			var drop = scr_choose(drops);
 			var count = 1;
 			instance_create_layer(x+image_xscale*54,y-270,"Front",o_item_fall,{item:drop,amount:count,direction:point_direction(x,40,o_player.x,0)})
 		}
+		if(equipped.durability<=0){equipped = -1;}
 	}
 }
 
@@ -102,6 +116,17 @@ if(input_check_pressed("mine")){
 		if(inventory2.selected_slot!=-1){
 			if(inventory.output_tag==-1 or inventory.output_tag.contains(inventory2.inventory[inventory2.selected_slot].name)){ inventory.additem(inventory2.inventory[inventory2.selected_slot]); inventory2.deleteindex(inventory2.selected_slot)}
 			}
+	}else
+	{
+		if(inventory.selected_slot!=-1){
+			var elm = inventory.inventory[inventory.selected_slot];
+			if(global.items[$ elm.name ].type == "pickaxe"){
+				var elm2 = equipped;
+				array_delete(inventory.inventory,inventory.selected_slot,1);
+				if(elm2!=-1){inventory.additem(elm2)}
+				equipped = elm;
+			}
+		}
 	}
 }
 	

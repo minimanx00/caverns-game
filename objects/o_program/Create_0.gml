@@ -13,9 +13,9 @@ debugconsole_time = room_speed;
 
 camera_basics_create();
 
-getitems = function(){
+getitems = function(_itemname="items.csv"){
 global.items = {};
-global.items_csv = load_csv("items.csv");
+global.items_csv = load_csv(_itemname);
 	
 	var hh = ds_grid_height(global.items_csv);
 	var ww = ds_grid_width(global.items_csv);
@@ -37,11 +37,11 @@ global.items_csv = load_csv("items.csv");
 getitems();
 if(DEBUG){
 	global.googleSheet.getManager();
-	global.googleSheet.downloadFile(GOOGLESHEETDOWNLOADURL,"items.csv",
+	global.googleSheet.downloadFile(GOOGLESHEETDOWNLOADURL,"items_online.csv",
 	function(result){
 		show_debug_message("ITEMS MADE FROM EXCEL")
 		ds_grid_destroy(global.items_csv);
-		getitems()
+		getitems("items_online.csv")
 		global.googleSheet = undefined;
 		},function(err){show_debug_message("ERROR: couldn't load localisation file")show_debug_message(err)})	
 }
