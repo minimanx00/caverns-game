@@ -1,8 +1,10 @@
 item_id,item_name,item_sprite,item_stacksize,item_type,item_durability,item_toolsprite
 stone_pickaxe,Stone Pickaxe,s_item_pickaxe_stone,1,pickaxe,10,s_pickaxe
-cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,30,s_pickaxe_cobalt
+cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,40,s_pickaxe_cobalt
 copper_pickaxe,Copper Pickaxe,s_item_pickaxe_copper,1,pickaxe,30,s_pickaxe_copper
 copper_ore,Copper Ore,s_item_copper_ore,999,resource,,
 copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,
 cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,,
 cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,
+3_ore,Test Ore,s_item_3_ore,999,resource,,
+3_ingot,Test Ingot,s_item_3_ingot,999,resource,,
