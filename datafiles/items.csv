@@ -6,5 +6,6 @@ copper_ore,Copper Ore,s_item_copper_ore,999,resource,,
 copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,
 cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,,
 cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,
-3_ore,Test Ore,s_item_3_ore,999,resource,,
-3_ingot,Test Ingot,s_item_3_ingot,999,resource,,
+3_ore,Emerald Ore,s_item_3_ore,999,resource,,
+3_ingot,Emerald Ingot,s_item_3_ingot,999,resource,,
+3_pickaxe,Emerald Pickaxe,s_item_pickaxe_3,1,pickaxe,40,s_pickaxe_3

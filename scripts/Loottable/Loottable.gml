@@ -1,14 +1,24 @@
-function Loottable() constructor {
+function Loottable(_struct) constructor {
+	loottable = _struct;
 	
+	static gain = function(_iventory){
+		
+	}
 }
 
 /*
 {
-	content: {
-	
-	},
-	effects: [
-	{type:"",}
-	]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone"
+        }
+      ]
+    }
+  ]
 }
+
 */

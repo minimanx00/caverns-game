@@ -1,6 +1,6 @@
 {
-    "ores":["copper_ore","cobalt_ore"],
-    "ingots":["copper_ingot","cobalt_ingot"],
+    "ores":["copper_ore","cobalt_ore","3_ore"],
+    "ingots":["copper_ingot","cobalt_ingot","3_ingot"],
     "furnace":"ores+ingots",
-    "pickaxes":["stone_pickaxe","cobalt_pickaxe","copper_pickaxe"]
+    "pickaxes":["stone_pickaxe","cobalt_pickaxe","copper_pickaxe","3_pickaxe"]
 }

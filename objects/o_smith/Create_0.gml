@@ -7,7 +7,7 @@ var mytag = global.tags[$ "ores"];
 inventory = new GameInventory();
 inventory.input_tag = mytag;
 
-items = [ global.recipes[$ "copper_pickaxe" ] , global.recipes[$ "cobalt_pickaxe" ] ]
+items = [ global.recipes[$ "copper_pickaxe" ] , global.recipes[$ "cobalt_pickaxe" ] , global.recipes[$ "3_pickaxe"] ]
 converter = new GameConverter(items)
 
 enum SMITHSTATE {

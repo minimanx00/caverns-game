@@ -85,7 +85,10 @@ if(is_struct(equipped) and mine_wait<=0 and input_check("mine") and !showinvento
 		equipped.durability --;
 		with(pm){
 			shake = 10;	
-			var drop = scr_choose(drops);
+			var _drops = drops;
+			if(is_struct(other.equipped) and other.equipped.name=="3_pickaxe"){_drops = ["copper_ore"]}else
+			if(is_struct(other.equipped) and other.equipped.name=="cobalt_pickaxe"){_drops = ["3_ore"]}
+			var drop = scr_choose(_drops);
 			var count = 1;
 			instance_create_layer(x+image_xscale*54,y-270,"Front",o_item_fall,{item:drop,amount:count,direction:point_direction(x,40,o_player.x,0)})
 		}
