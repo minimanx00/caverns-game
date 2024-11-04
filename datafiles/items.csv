@@ -1,11 +1,11 @@
-item_id,item_name,item_sprite,item_stacksize,item_type,item_durability,item_toolsprite
-stone_pickaxe,Stone Pickaxe,s_item_pickaxe_stone,1,pickaxe,10,s_pickaxe
-cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,40,s_pickaxe_cobalt
-copper_pickaxe,Copper Pickaxe,s_item_pickaxe_copper,1,pickaxe,30,s_pickaxe_copper
-copper_ore,Copper Ore,s_item_copper_ore,999,resource,,
-copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,
-cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,,
-cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,
-3_ore,Emerald Ore,s_item_3_ore,999,resource,,
-3_ingot,Emerald Ingot,s_item_3_ingot,999,resource,,
-3_pickaxe,Emerald Pickaxe,s_item_pickaxe_3,1,pickaxe,40,s_pickaxe_3
+item_id,item_name,item_sprite,item_stacksize,item_type,item_durability,item_toolsprite,item_worth
+stone_pickaxe,Stone Pickaxe,s_item_pickaxe_stone,1,pickaxe,10,s_pickaxe,10
+cobalt_pickaxe,Cobalt Pickaxe,s_item_pickaxe_cobalt,1,pickaxe,40,s_pickaxe_cobalt,10
+copper_pickaxe,Copper Pickaxe,s_item_pickaxe_copper,1,pickaxe,30,s_pickaxe_copper,10
+copper_ore,Copper Ore,s_item_copper_ore,999,resource,,,5
+copper_ingot,Copper Ingot,s_item_copper_ingot,999,resource,,,10
+cobalt_ore,Cobalt Ore,s_item_cobalt_ore,999,resource,,,5
+cobalt_ingot,Cobalt Ingot,s_item_cobalt_ingot,999,resource,,,30
+3_ore,Emerald Ore,s_item_3_ore,999,resource,,,5
+3_ingot,Emerald Ingot,s_item_3_ingot,999,resource,,,40
+3_pickaxe,Emerald Pickaxe,s_item_pickaxe_3,1,pickaxe,40,s_pickaxe_3,10

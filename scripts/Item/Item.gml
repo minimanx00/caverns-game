@@ -9,6 +9,8 @@ function Item(_data = {}) constructor {
 	smelttime = 10;
 	smeltresult = "";
 	
+	worth = 1;
+	
 	if(struct_exists(_data,"item_name")){
 		name = _data[$ "item_name"];	
 	}
@@ -35,6 +37,10 @@ function Item(_data = {}) constructor {
 	
 	if(type == "pickaxe" and struct_exists(_data,"item_toolsprite") and _data[$ "item_toolsprite"]!=""){
 		toolsprite = asset_get_index(_data[$ "item_toolsprite"]);	
+	}
+
+	if(struct_exists(_data,"item_worth")){
+		worth =  _data[$ "item_worth"];
 	}
 	
 }
