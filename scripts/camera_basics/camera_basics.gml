@@ -34,11 +34,12 @@ var cam = view_camera[0]
 var dpw = display_get_width();
 var dph = display_get_height();
 
+/*
 if(os_browser!=browser_not_a_browser){
 	dpw = browser_width;
 	dph = browser_height;
 	scale = false;
-}
+}*/
 
 aspect_ratio = dpw/dph;
 
@@ -67,17 +68,19 @@ if(view_height * max_window_scale == dph)
     
 
 window_scale = max_window_scale;
+if(os_browser!=browser_not_a_browser){window_scale = 1 }else{
 
 
+	window_set_size(view_width*window_scale,view_height*window_scale);
+	display_set_gui_size(view_width,view_height);
 
-window_set_size(view_width*window_scale,view_height*window_scale);
-display_set_gui_size(view_width,view_height);
+	alarm[0]=1;
+	if(scale){
+	surface_resize(application_surface,view_width*window_scale,view_height*window_scale);		
+	}else{
+	surface_resize(application_surface,view_width,view_height);
+	}
 
-alarm[0]=1;
-if(scale){
-surface_resize(application_surface,view_width*window_scale,view_height*window_scale);		
-}else{
-surface_resize(application_surface,view_width,view_height);
 }
 
 

@@ -13,4 +13,4 @@ function Resource(_itemname,_count) constructor {
 		draw_sprite_ext(gitem.sprite,0,xx,yy,scale,scale,0,c_white,1)
 		draw_text(xx,yy,string(count))
 	}
-}
+}   
